@@ -2,13 +2,13 @@
 import { Dumbbell, Zap, HandFist, Bird, User, Scaling } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Sofia_Sans } from "next/font/google";
+import {Montserrat } from "next/font/google";
 import { motion } from "motion/react";
 import { use } from "react";
 import Slider from "react-slick";
 
 
-const sofia = Sofia_Sans({
+const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["800"],
 });
@@ -123,11 +123,13 @@ export default function Home() {
     
   return (
 <>
-  <motion.section
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-    >
+
+       <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}>
+    
+    
 <section className="relative overflow-hidden px-4 sm:px-8 md:px-16 
 py-8 lg:px-20 min-h-[80dvh] md:min-h-[95dvh] 
  flex items-center justify-center text-center">
@@ -147,9 +149,9 @@ py-8 lg:px-20 min-h-[80dvh] md:min-h-[95dvh]
 
   {/* Text content */}
   <div className="relative z-30 w-full max-w-2xl -translate-y-8 md:-translate-y-12">
-    <h1 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white mb-4 font-bold leading-tight tracking-tighter ${sofia.className}`}>
+    <h1 className={`text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl text-white mb-4 font-bold leading-tight tracking-tighter ${montserrat.className}`}>
       Transform Your Body{" "} <br />
-      <span className="text-red-600 font-bold ">
+      <span className="text-red-600 font-extrabold"> 
         Transform Your Life
       </span>
     </h1>
@@ -197,7 +199,8 @@ py-8 lg:px-20 min-h-[80dvh] md:min-h-[95dvh]
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.6, delay: 0.2 }}
     >
-      <h2 className="text-3xl font-extrabold text-gray-900">Why Choose Us?</h2>
+      <h2 className={`${montserrat.className} text-2xl font-extrabold text-gray-900`}
+>Why Choose Us?</h2>
 
       <ul className="space-y-3">
         <li className="flex items-start gap-3">
@@ -227,7 +230,7 @@ py-8 lg:px-20 min-h-[80dvh] md:min-h-[95dvh]
 
 <section className="py-16 bg-gray-300">
   <div className="container mx-auto px-4 text-center">
-    <h2 className="text-3xl font-bold mb-12">Our Programs</h2>
+    <h2 className={`${montserrat.className} text-2xl font-bold mb-12`}>Our Programs</h2>
     <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
       {programs.map((program, index) => (
         <motion.div
@@ -260,7 +263,7 @@ py-8 lg:px-20 min-h-[80dvh] md:min-h-[95dvh]
 
 <section className="py-16 bg-white">
   <div className="container mx-auto px-4 text-center">
-    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-12">Meet Our Trainers</h2>
+    <h2 className={`${montserrat.className} text-2xl sm:text-2xl md:text-4xl font-bold mb-12`}>Meet Our Trainers</h2>
     <div className="grid gap-8 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {trainers.map((trainer, index) => (
         <motion.div
@@ -295,7 +298,7 @@ py-8 lg:px-20 min-h-[80dvh] md:min-h-[95dvh]
 
  <section className="py-16 bg-gray-300">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold mb-12">Membership Plans</h2>
+        <h2 className={`${montserrat.className} text-2xl font-bold mb-12`}>Membership Plans</h2>
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-3">
           {plans.map((plan, index) => (
             <motion.div
@@ -330,7 +333,7 @@ py-8 lg:px-20 min-h-[80dvh] md:min-h-[95dvh]
     
   <section className="py-16 bg-white">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold mb-12">What Our Members Say</h2>
+        <h2 className={`${montserrat.className} text-2xl font-bold mb-12`}>What Our Members Say</h2>
 
         {/* Desktop Grid */}
         <div className="hidden lg:grid lg:grid-cols-3 lg:gap-8">
@@ -403,7 +406,7 @@ py-8 lg:px-20 min-h-[80dvh] md:min-h-[95dvh]
     >
       <div className="w-full max-w-3xl">
         {/* Heading */}
-        <h2 className="mt-4 mb-5 text-4xl md:text-6xl font-bold text-center bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">
+        <h2 className={`${montserrat.className} mt-4 mb-5 text-2xl md:text-4xl font-bold text-center text-red-600 `}>
           Let's Get in Touch
         </h2>
         <p className="text-center text-gray-600 mb-6">

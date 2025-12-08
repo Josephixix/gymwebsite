@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import {Spline_Sans_Mono } from "next/font/google"; 
+import {Lora } from "next/font/google"; 
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const splineSansMono = Spline_Sans_Mono({
-  variable: "--font-spline-sans-mono",
+const lora = Lora ({
+  variable: "--font-lora",
   weight: ["700"],
 });
 
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${splineSansMono.variable} antialiased`}
+        className={` ${lora.variable} antialiased`}
       >
         <Navbar />
         {children}

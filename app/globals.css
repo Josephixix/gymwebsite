@@ -5,11 +5,11 @@
 @tailwind utilities;
 
 :root {
-  --font-suse-mono: 'SUSE_Mono', monospace;
+  --font-lora: 'Lora', serif;
 }
 
 body {
-  font-family: var(--font-suse-mono);
+  font-family: var(--font-lora);
 }
 
 
