@@ -18,7 +18,7 @@ export default function Footer() {
       </div>
 
       {/* Black gradient overlay */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-t from-black/70 via-black/50 to-black/30" />
+      <div className="absolute inset-0 z-0 bg-linear-to-t from-black/70 via-black/50 to-black/30" />
 
       {/* Background Blobs */}
       <div className="pointer-events-none absolute inset-0 select-none overflow-hidden -z-5">

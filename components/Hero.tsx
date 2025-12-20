@@ -35,7 +35,7 @@ py-8 lg:px-20 min-h-[80dvh] md:min-h-[95dvh]
   />
 
   {/* Black gradient overlay */}
-  <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/30 via-black/50 to-black/70" />
+  <div className="absolute inset-0 z-10 bg-linear-to-b from-black/30 via-black/50 to-black/70" />
 
   {/* Background blobs */}
   <div className="absolute top-10 left-10 h-64 w-64 rounded-full bg-blue-500/5 blur-3xl pointer-events-none z-20" />

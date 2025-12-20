@@ -87,7 +87,7 @@ return(
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="bg-gray-300 rounded-xl shadow-md p-6 flex-shrink-0 w-72 flex flex-col items-center text-center"
+              className="bg-gray-300 rounded-xl shadow-md p-6 shrink-0 w-72 flex flex-col items-center text-center"
             >
               <Image
                 src={testimonial.photo}

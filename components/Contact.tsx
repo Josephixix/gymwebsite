@@ -85,7 +85,7 @@ export default function Home() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-red-600 to-black text-white py-2 rounded-md text-sm font-medium hover:opacity-90 transition"
+              className="w-full flex items-center justify-center gap-2 bg-linear-to-r from-red-600 to-black text-white py-2 rounded-md text-sm font-medium hover:opacity-90 transition"
             >
               Send
               <svg
