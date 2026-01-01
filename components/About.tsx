@@ -1,18 +1,9 @@
 "use client";
-   import { Dumbbell, Zap, HandFist, Bird, User, Scaling } from "lucide-react";
+   
    import Image from "next/image";
-   import Link from "next/link";
-   import {Montserrat } from "next/font/google";
-   import { motion } from "motion/react";
-   import { use } from "react";
-   import Slider from "react-slick";
+   import {motion } from "motion/react";
    
-   
-   const montserrat = Montserrat({
-     subsets: ["latin"],
-     weight: ["800"],
-   });
-
+  
   
   export default function About(){
 
@@ -31,7 +22,7 @@ return(
       transition={{ duration: 0.6 }}
     >
       <Image
-        src="/about.jpg" // Replace with your gym/trainer image
+        src="/about.jpg" 
         alt="Gym Trainer"
         width={600}
         height={400}
@@ -47,7 +38,7 @@ return(
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.6, delay: 0.2 }}
     >
-      <h2 className={`${montserrat.className} text-2xl font-extrabold text-gray-900`}
+      <h2 className={`text-2xl font-extrabold text-gray-900`}
 >Why Choose Us?</h2>
 
       <ul className="space-y-3">

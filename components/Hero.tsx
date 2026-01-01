@@ -1,17 +1,7 @@
 "use client";
-import { Dumbbell, Zap, HandFist, Bird, User, Scaling } from "lucide-react";
-import Image from "next/image";
+
 import Link from "next/link";
-import {Montserrat } from "next/font/google";
-import { motion } from "motion/react";
-import { use } from "react";
-import Slider from "react-slick";
-
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["800"],
-});
+import {motion } from "motion/react";
 
 export default function Hero() {
 
@@ -25,7 +15,7 @@ return(
     
     
 <section className="relative overflow-hidden px-4 sm:px-8 md:px-16 
-py-8 lg:px-20 min-h-[80dvh] md:min-h-[95dvh] 
+py-8 lg:px-20 min-h-[80dvh] md:min-h-[99dvh] 
  flex items-center justify-center text-center">
 
   {/* Background image */}
@@ -43,7 +33,7 @@ py-8 lg:px-20 min-h-[80dvh] md:min-h-[95dvh]
 
   {/* Text content */}
   <div className="relative z-30 w-full max-w-2xl -translate-y-8 md:-translate-y-12">
-    <h1 className={`text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-6xl text-white mb-4 font-bold leading-tight tracking-tighter ${montserrat.className}`}>
+    <h1 className={`text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-6xl text-white mb-4 font-bold leading-tight tracking-tighter`}>
       Transform Your Body{" "} <br />
       <span className="text-red-600 font-extrabold"> 
         Transform Your Life

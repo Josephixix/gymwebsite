@@ -1,18 +1,6 @@
 "use client";
-import { Dumbbell, Zap, HandFist, Bird, User, Scaling } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import {Montserrat } from "next/font/google";
+
 import { motion } from "motion/react";
-import { use } from "react";
-import Slider from "react-slick";
-
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["800"],
-});
-
 
 
 const plans = [
@@ -25,7 +13,7 @@ const plans = [
     name: "Standard",
     price: "$49/mo",
     features: ["Everything in Basic", "3 group classes/week", "Personal trainer 1 session/month"],
-    highlight: true, // Middle plan highlighted
+    highlight: true, 
   },
   {
     name: "Premium",
@@ -38,7 +26,7 @@ export default function Plan() {
   return (
  <section className="py-16 bg-gray-300">
       <div className="container mx-auto px-4 text-center">
-        <h2 className={`${montserrat.className} text-2xl font-bold mb-12`}>Membership Plans</h2>
+        <h2 className={`text-2xl font-bold mb-12`}>Membership Plans</h2>
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-3">
           {plans.map((plan, index) => (
             <motion.div

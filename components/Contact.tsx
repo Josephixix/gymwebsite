@@ -1,18 +1,6 @@
 "use client";
-import { Dumbbell, Zap, HandFist, Bird, User, Scaling } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import {Montserrat } from "next/font/google";
+
 import { motion } from "motion/react";
-import { use } from "react";
-import Slider from "react-slick";
-
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["800"],
-});
-
 
 export default function Home() {
 
@@ -27,7 +15,7 @@ export default function Home() {
     >
       <div className="w-full max-w-3xl">
         {/* Heading */}
-        <h2 className={`${montserrat.className} mt-4 mb-5 text-2xl md:text-4xl font-bold text-center text-red-600 `}>
+        <h2 className={`mt-4 mb-5 text-2xl md:text-4xl font-bold text-center text-red-600 `}>
           Let's Get in Touch
         </h2>
         <p className="text-center text-gray-600 mb-6">

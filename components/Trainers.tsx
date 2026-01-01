@@ -1,17 +1,9 @@
 "use client";
-import { Dumbbell, Zap, HandFist, Bird, User, Scaling } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
-import {Montserrat } from "next/font/google";
 import { motion } from "motion/react";
-import { use } from "react";
-import Slider from "react-slick";
 
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["800"],
-});
+
 
 
 const trainers = [
@@ -51,7 +43,7 @@ export default function Trainers() {
 
 <section className="py-16 bg-white">
   <div className="container mx-auto px-4 text-center">
-    <h2 className={`${montserrat.className} text-2xl sm:text-2xl md:text-4xl font-bold mb-12`}>Meet Our Trainers</h2>
+    <h2 className={`text-2xl sm:text-2xl md:text-4xl font-bold mb-12`}>Meet Our Trainers</h2>
     <div className="grid gap-8 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {trainers.map((trainer, index) => (
         <motion.div

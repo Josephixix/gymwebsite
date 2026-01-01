@@ -1,21 +1,7 @@
 "use client";
-import { Dumbbell, Zap, HandFist, Bird, User, Scaling } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
-import {Montserrat } from "next/font/google";
 import { motion } from "motion/react";
-import { use } from "react";
-import Slider from "react-slick";
-import Hero from "@/components/Hero";
-import Programs from "@/components/Programs";
-import About from "../components/About";
-import Trainers from "@/components/Trainers";
-import Plan from "@/components/Plan";
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["800"],
-});
 
 
 
@@ -47,7 +33,7 @@ const testimonials = [
 return(
   <section className="py-16 bg-white">
       <div className="container mx-auto px-4 text-center">
-        <h2 className={`${montserrat.className} text-2xl font-bold mb-12`}>What Our Members Say</h2>
+        <h2 className={`text-2xl font-bold mb-12`}>What Our Members Say</h2>
 
         {/* Desktop Grid */}
         <div className="hidden lg:grid lg:grid-cols-3 lg:gap-8">
